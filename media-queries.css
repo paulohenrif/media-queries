@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+@media (min-width: 500px) {
+    body {
+        background: url('img/back-tablet.jpg');
+    }
+    img#tablet { display: block; margin: auto;}
+    img#phone { display: none;}
+}
+
+@media print {
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+    main {
+        width: 95vw;
+    }
+    img#print { display: block; margin: auto;}
+    img#tablet {display: none;}
+} 
+
+@media (min-width: 800px) {
+    body {
+        background: url('img/back-pc.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+    img#pc { display: block; margin: auto;}
+    img#tablet { display: none;}
+}
+
+@media (min-width: 1080px) {
+    body {
+        background: url('img/back-tv.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+    img#tv {display: block; margin: auto;}
+    img#pc {display: none;}
+}
